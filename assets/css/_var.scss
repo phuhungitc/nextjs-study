@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('../fonts/HelveticaNeue/HelveticaNeue.eot?#iefix') format('embedded-opentype'),  url('../fonts/HelveticaNeue/HelveticaNeue.woff') format('woff'), url('../fonts/HelveticaNeue/HelveticaNeue.ttf')  format('truetype'), url('../fonts/HelveticaNeue/HelveticaNeue.svg#HelveticaNeue') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('../fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.woff') format('woff'), url('../fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.ttf')  format('truetype'), url('../fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.svg#HelveticaNeue-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+$cl-black: #222222;
+$cl-gray: #9b9b9b;
+$cl-blue: #1663c7;
+$cl-green: #01d41d;
+$cl-orange: #fe9900;
+$cl-yellow: #ffba00;
+
+$font-regular: 'HelveticaNeue', Arial;
+$font-bold: 'HelveticaNeue-Bold', Arial;
+.ff-bold{
+  font-family: $font-bold;
+}
+
+.cl-gray{
+  color: $cl-gray;
+}
+.cl-yellow{
+  color: $cl-yellow;
+}
+.cl-green{
+  color: $cl-green;
+}
+.fs-32{
+  font-size: 32px;
+}
+.fs-28{
+  font-size: 28px;
+}
+.fs-24{
+  font-size: 24px;
+}
+.fs-18{
+  font-size: 18px;
+}
+.fs-14{
+  font-size: 14px;
+}
+.fs-12{
+  font-size: 12px;
+}
+
+.mx--1{
+  margin-left: -0.25rem;
+  margin-right: -0.25rem;
+}
+@mixin transform($property){
+  -webkit-transform: $property;
+  -moz-transform: $property;
+  -ms-transform: $property;
+  -o-transform: $property;
+  transform: $property;
+}
+@mixin transition($property){
+  -webkit-transition: $property;
+  -moz-transition: $property;
+  -ms-transition: $property;
+  -o-transition: $property;
+  transition: $property;
+}
+
+@media (max-width: 767px) {
+  .fs-32{
+    font-size: 24px;
+  }
+  .fs-28{
+    font-size: 22px;
+  }
+  .fs-24{
+    font-size: 18px;
+  }
+  .fs-18{
+    font-size: 16px;
+  }
+  .fs-14{
+    font-size: 13px;
+  }
+  .fs-12{
+    font-size: 12px;
+  }
+} 
